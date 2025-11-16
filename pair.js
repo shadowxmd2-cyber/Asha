@@ -11,8 +11,8 @@ const crypto = require('crypto');
 const axios = require('axios');
 const yts = require("yt-search");
 const fetch = require("node-fetch"); 
-const api = `https://asitha.top/api-docs`;
-const apikey = `dda4ae136624f95538d55df41565bb3c4c4df5502ef008ad7259e31171df1afb`;
+const api = `https://kavi-public-apis.vercel.app`;
+const apikey = `64d142830717a1c2f564f3cb90acfa15af53d43ad08faa94ee93ba5d144e82a2`;
 
 const {
     default: makeWASocket,
@@ -28,24 +28,24 @@ const {
 
 const config = {
     AUTO_VIEW_STATUS: 'true',
-    AUTO_LIKE_STATUS: 'true',
+    AUTO_LIKE_STATUS: 'false',
     AUTO_RECORDING: 'true',
     AUTO_LIKE_EMOJI: ['🧩', '🍉', '💜', '🌸', '🪴', '💊', '💫', '🍂', '🌟', '🎋', '😶‍🌫️', '🫀', '🧿', '👀', '🤖', '🚩', '🥰', '🗿', '💜', '💙', '🌝', '🖤', '💚'],
     PREFIX: '.',
     MAX_RETRIES: 3,
     GROUP_INVITE_LINK: 'https://chat.whatsapp.com/DfNDS9TNzePJeaYWl5cd1i?mode=wwt',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://files.catbox.moe/dd90jo.jpg',
+    IMAGE_PATH: 'https://files.catbox.moe/z3v2kz.jpg',
     NEWSLETTER_JID: '120363419131838652@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     NEWS_JSON_URL: '',
-    BOT_NAME: '𝙎𝙝𝙖𝙙𝙤𝙬𝙓 𝙈𝙞𝙣𝙞 𝘽𝙤𝙩',
-    OWNER_NAME: '༒•°𝙄𝙨𝙝𝙖𝙣 & 𝙆𝙖𝙫𝙞𝙣𝙙𝙪°•༒ ',
+    BOT_NAME: '𝐐𝐮𝐞𝐞𝐧 𝐀𝐬𝐡𝐚 𝐌𝐢𝐧𝐢',
+    OWNER_NAME: '𝒦𝒶𝓋𝒾𝓃𝒹𝓊 & 𝐼𝓈𝒽𝒶𝓃',
     OWNER_NUMBER: '+94770051298',
     BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '> ᴍᴀɪɴᴛᴀɴᴀɴᴄᴇ ʙʏ ꜱʜᴀᴅᴏᴡx ᴄʀᴇᴡ.',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbAqDs9ICVfqihKHaD0P'
+    BOT_FOOTER: '> ᴍᴀɪɴᴛᴀɴᴀɴᴄᴇ ʙʏ 𝒦𝒶𝓋𝒾𝓃𝒹𝓊 & 𝐼𝓈𝒽𝒶𝓃',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbAzyS14o7qECXm3QP2a'
 };
 
 const octokit = new Octokit({
@@ -467,14 +467,14 @@ function setupCommandHandlers(socket, number) {
 
         const title = '👋 Hey, I\'m live!';
         const content = 
-`𝗜'𝗺 𝙎𝙝𝙖𝙙𝙤𝙬𝙓 𝙈𝙞𝙣𝙞 𝘽𝙤𝙩 𝗠𝗮𝗱𝗲 𝗕𝘆 𝙎𝙝𝙖𝙙𝙤𝙬𝙓 𝘾𝙧𝙚𝙬🕊️❤️‍🩹.
+`𝗜'𝗺 𝐐𝐮𝐞𝐞𝐧 𝐀𝐬𝐡𝐚 𝐌𝐢𝐧𝐢 𝘽𝙤𝙩 𝗠𝗮𝗱𝗲 𝗕𝘆 𝒦𝒶𝓋𝒾𝓃𝒹𝓊 & 𝐼𝓈𝒽𝒶𝓃🕊️❤️‍🩹.
 
 🧬 \`Vιɾʂισɳ:\` ${config.BOT_VERSION}
 📡 \`Hσʂƚ:\` Heroku
 ⏰ \`Rυɳƚιɱҽ:\` ${hours}h ${minutes}m ${seconds}s
 👨‍💻 \`Oɯɳҽɾ:\` ${config.OWNER_NAME}
 
-✨ *ShadowX Mini Bot* ✨  
+✨ *Queen Asha Mini Bot* ✨  
 Your smart WhatsApp helper is here! ShadowX Mini Bot makes chatting easier and more fun. Get quick answers, download songs and videos, and manage groups with simple commands.  
 
 🎵 Download media  
@@ -485,12 +485,12 @@ Always ready to help you anytime!
 
 👨‍💻 Made with ❤️ by Ishan & Kavindu  
 
-Try ShadowX Mini Bot now and enjoy smarter chatting! 🚀
+Try Queen Asha Mini Bot now and enjoy smarter chatting! 🚀
 
 ⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌⛌
 𝑩𝑶𝑻 𝑾𝑬𝑩: තව නැතෝ...
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-𝑪𝑯𝑨𝑵𝑬𝑳: https://whatsapp.com/channel/0029VbAzyS14o7qECXm3QP2a
+𝑪𝑯𝑨𝑵𝑬𝑳: 'https://whatsapp.com/channel/0029VbAzyS14o7qECXm3QP2a'
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬`;
 
         const footer = config.BOT_FOOTER;
@@ -701,13 +701,13 @@ await socket.sendMessage(sender, { text : '《 ███████████
             + 'VERSION:3.0\n' 
             + 'FN:SHALA OWNER\n'
             + 'ORG:SHALA OWNER\n'
-            + 'TEL;type=CELL;type=VOICE;waid=94776702385: 94776702385\n'
-            + 'EMAIL:Shadowxmini@gmail.com\n'
+            + 'TEL;type=CELL;type=VOICE;waid=94770051298: 94770051298\n'
+            + 'EMAIL:queenasha@gmail.com\n'
             + 'END:VCARD';
 
         await socket.sendMessage(sender, {
                             contacts: {
-                                displayName: "Cyber Net Mini Bot Ofc. Owner",
+                                displayName: "Queen Asha Mini Bot Ofc. Owner",
                                 contacts: [{ vcard }]
                             }
                         });     
